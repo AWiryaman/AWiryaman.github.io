@@ -21,5 +21,7 @@ paginate:         5
 # Custom vars
 version:          1.0.0
 
-github:
-  repo:           https://github.com/AWiryaman/
+#github:
+#  repo:           https://github.com/AWiryaman/
+
+repository:       AWiryaman/AWiryaman.github.io
