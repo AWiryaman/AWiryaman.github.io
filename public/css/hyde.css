@@ -32,7 +32,11 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  /* font-family: "PT Sans", Helvetica, Arial, sans-serif;
+	font-family: 'Playfair Display', serif;
+	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Fira Sans', sans-serif; */
+	font-family: 'Rubik', sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -65,7 +69,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 19rem;
     text-align: left;
   }
 }
@@ -247,4 +251,15 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .content a,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
+}
+
+/* Gradient */
+.theme-gradient .sidebar {
+	background: #2c3e50; /* fallback for old browsers */
+	background: -webkit-linear-gradient(30deg, #2c3e50 , #3498db); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(30deg, #2c3e50 , #3498db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.theme-gradient .content a,
+.theme-gradient .related-posts li a:hover {
+	color: #2c3e50;
 }
