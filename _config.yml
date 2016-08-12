@@ -1,25 +1,25 @@
 # Dependencies
 markdown:         kramdown
-highlighter:      pygments
+highlighter:      rouge
 
 # Permalinks
 permalink:           pretty
 
 # Setup
 title:               Anthony Wiryaman
-tagline:
+tagline:             Hello
 description:         Anthony Wiryaman is a freshman at Northeastern, with a combined major in CS and Business Administration.
 url:                 http://anthony.wiryaman.com/
 baseurl:             /
 
 author:
   name:           'Anthony Wiryaman'
-  url:
+  url:             http://anthony.wiryaman.com/
 
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+version:          1.0.0
 
 github:
-  repo:           https://github.com/AWiryaman
+  repo:           https://github.com/AWiryaman/
