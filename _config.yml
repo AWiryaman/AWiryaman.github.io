@@ -21,7 +21,8 @@ paginate:         5
 # Custom vars
 version:          1.0.0
 
+# removed so build would work locally
 #github:
 #  repo:           https://github.com/AWiryaman/
 
-repository:       AWiryaman/AWiryaman.github.io
+repository:       AWiryaman/AWiryaman.github.io #Added so build would work locally

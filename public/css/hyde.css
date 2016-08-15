@@ -36,7 +36,7 @@ html {
 	font-family: 'Playfair Display', serif;
 	font-family: 'Cormorant Garamond', serif;
 	font-family: 'Fira Sans', sans-serif; */
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Rubik', sans-serif; /* Changed font */
 }
 @media (min-width: 48em) {
   html {
@@ -69,7 +69,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 19rem;
+    width: 19rem; /*width adjusted to fit name*/
     text-align: left;
   }
 }
@@ -254,6 +254,7 @@ a.sidebar-nav-item:focus {
 }
 
 /* Gradient */
+/* Added new sidebar theme uigradients.com "Between Night and Day"*/
 .theme-gradient .sidebar {
 	background: #2c3e50; /* fallback for old browsers */
 	background: -webkit-linear-gradient(30deg, #2c3e50 , #3498db); /* Chrome 10-25, Safari 5.1-6 */
