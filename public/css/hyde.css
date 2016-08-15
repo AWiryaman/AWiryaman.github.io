@@ -22,6 +22,7 @@
  * Container
  * Reverse layout
  * Themes
+ * Image cropper
  */
 
 
@@ -69,7 +70,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 19rem; /*width adjusted to fit name*/
+    width: 16rem; /*width adjusted*/
     text-align: left;
   }
 }
@@ -83,8 +84,8 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 2.5rem;
 }
 
 /* Sidebar nav */
@@ -263,4 +264,31 @@ a.sidebar-nav-item:focus {
 .theme-gradient .content a,
 .theme-gradient .related-posts li a:hover {
 	color: #2c3e50;
+}
+
+/*
+ * Image Cropper
+ *
+ *
+ * Creates a rounded image
+*/
+.image-cropper {
+    max-width: 200px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.rounded {
+    display: block;
+    margin: 0 auto;
+    height: 200px;
+    width: 200px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+
+    background:url(picture.jpg) center no-repeat;
+    	background-size:cover;
 }
