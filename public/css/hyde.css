@@ -70,7 +70,7 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 16rem; /*width adjusted*/
+    width: 16rem; /*width adjusted from 18rem*/
     text-align: left;
   }
 }
@@ -263,7 +263,7 @@ a.sidebar-nav-item:focus {
 }
 .theme-gradient .content a,
 .theme-gradient .related-posts li a:hover {
-	color: #2c3e50;
+	color: #2c3e50; /*Same as lefthand gradient from above*/
 }
 
 /*
@@ -273,7 +273,7 @@ a.sidebar-nav-item:focus {
  * Creates a rounded image
 */
 .image-cropper {
-    max-width: 200px;
+    max-width: 200px; /*can be adjusted*/
     height: auto;
     position: relative;
     overflow: hidden;
@@ -281,8 +281,8 @@ a.sidebar-nav-item:focus {
 .rounded {
     display: block;
     margin: 0 auto;
-    height: 200px;
-    width: 200px;
+    height: 200px; /*can be adjusted*/
+    width: 200px; /*can be adjusted*/
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
