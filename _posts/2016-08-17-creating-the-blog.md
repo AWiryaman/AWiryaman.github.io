@@ -3,7 +3,7 @@ layout: post
 title: Creating the blog
 ---
 
-##The Start
+## The Start
 
 This summer, some of my friends and I decided that we should start blogs to accompany our personal websites. We decided to turn it into a little competition.
 
@@ -18,7 +18,7 @@ To customize the theme I looked towards a couple other blogs which used hyde or 
 - [Kyle Stratis's blog](http://kylestratis.com/2015/05/05/blog-setup-pt2/)
 
 
-##Jekyll and GitHub pages
+## Jekyll and GitHub pages
 
 I began with a GitHub account and followed the instructions [here](https://pages.github.com/).
 Key GitHub commands:
@@ -47,7 +47,7 @@ The essentials contained within the quick-start guide are:
 \*myblog would be the GitHub repo
 
 
-##Hyde
+## Hyde
 
 [Hyde](https://github.com/poole/hyde) can be downloaded, cloned or manually copy and pasted in to your project.
 
@@ -82,7 +82,7 @@ gem 'github-pages', group: :jekyll_plugins
 
 Gemfiles seem pretty typical in Jekyll projects but is not actually in the existing hyde project.
 
-##Font Customization
+## Font Customization
 
 I chose to change the font on hyde. I took font suggestions from [Typewolf](https://www.typewolf.com/google-fonts) using Google fonts as it is simple to implement.
 
@@ -129,8 +129,10 @@ html {
 
 for the whole page
 
-##Sidebar
-####Sidebar Theme
+## Sidebar
+
+#### Sidebar Theme
+
 Hyde comes with 8 color options for the sidebar. To make my sidebar a little more unique, I took a gradient from http://uigradients.com/.
 
 I chose "Between Night and Day" for my gradient. Appropriate CSS code can be copy and pasted from uigradients.
@@ -161,28 +163,9 @@ In `public/css/hyde.css` you need to create the custom theme with the following 
 }
 ```
 
-To apply the theme add `<body class="theme-gradient"> <!-- set theme to gradient -->` to `_layouts/default.html`
+To apply the theme change `<body` to `<body class="theme-gradient">` in `_layouts/default.html`
 
-```html
-<!DOCTYPE html>
-<html lang="en-us">
-	{% include google_analytics.html %}
-  {% include head.html %}
-
-  <body class="theme-gradient"> <!-- set theme to gradient -->
-
-    {% include sidebar.html %}
-
-    <div class="content container">
-      {{ content }}
-    </div>
-
-  </body>
-</html>
-```
-
-
-####Sidebar Width
+#### Sidebar Width
 
 I decreased the sidebar size in `public/css/hyde.css`:
 
@@ -212,7 +195,7 @@ I decreased the sidebar size in `public/css/hyde.css`:
 }
 ```
 
-####Added personal image
+#### Added personal image
 
 I decided a picture of myself would be a nice touch and that there was enough free space in the sidebar to add one. I went for a round image as I thought it would look sharp in the rectangular sidebar.
 
@@ -261,7 +244,7 @@ To add the image to the sidebar, I edited the top of  `_includes/sidebar.html` t
 
 The height and width of the image as well as the length your description and the width of the sidebar can all be adjusted to get everything to fit in the sidebar.
 
-####Font Awesome
+#### Font Awesome
 
 I changed the links at the bottom of the sidebar to be more suited towards me. I got rid of "Download" and "GitHub project"
 
@@ -280,15 +263,15 @@ In `_includes/sidebar.html`, I commented out the links I didn't want and replace
 ```
 
 
-##Favicon
+## Favicon
 
 The Favicon is the icon that appears in the browser tab. To customize this you just need to change the `favicon.ico` file. I made a simple icon using [Squarespace's logo creator](https://logo.squarespace.com/). My logo is my initials inside a square using the colors from the gradient theme I chose.
 
-##Custom domain
+## Custom domain
 
 I got my custom domain through https://www.namecheap.com/ (use https://nc.me/ for a student discount). I purchased a couple domains (wiryaman.com, wiryaman.xyz and wiryaman.me) as the student discount made them relatively cheap. Unfortunately the domain I wanted (anthonyw.xyz) was already taken. Since all the domains were my last name, the obvious choice was to use a subdomain to make it anthony.wiryaman.
 
-####Making a subdomain
+#### Making a subdomain
 1. To make the subdomain go to the dashboard in namecheap
 2. In the lefthand menu click on "Domain List"
 3. Select your domain from the list and click "Manage"
@@ -299,5 +282,5 @@ I got my custom domain through https://www.namecheap.com/ (use https://nc.me/ fo
 8. "Target" is the domain (ex. wiryaman.com)
 9. You can leave the TTL as automatic
 
-####Adding the custom domain to the website
+#### Adding the custom domain to the website
 In `CNAME` change the url to your custom domain
